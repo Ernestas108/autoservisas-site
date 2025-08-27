@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Viršutinis pranešimas -->
+<div class="topbar">
+    Dirbame I–V 8:00–18:00 • Skambink: <a href="tel:+37060457322">+370 604 57322</a>
+</div>
+
+<!-- Header + navigacija -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="#home" aria-label="Pagrindinis">
+            <span>Auto</span>Servisas <small>LT</small>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Meniu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="main-nav" class="nav">
+            <ul>
+                <li><a href="#home">Pradžia</a></li>
+                <li><a href="#services">Paslaugos</a></li>
+                <li><a href="#about">Apie mus</a></li>
+                <li><a href="#contact">Kontaktai</a></li>
+                <li><a class="btn nav-btn" href="#contact">Gauti pasiūlymą</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero" role="banner" aria-label="Pirmas ekranas">
+    <div class="container hero-inner">
+        <h1>Patikimas autoservisas jūsų automobiliui</h1>
+        <p>Diagnostika, variklių remontas, važiuoklė, padangos – greitai ir kokybiškai.</p>
+        <div class="hero-cta">
+            <a class="btn" href="#contact">Rezervuoti laiką</a>
+            <a class="btn-outline" href="tel:+37060012345">Skambinti</a>
+        </div>
+    </div>
+</section>
+
+<!-- Paslaugos -->
+<section id="services" class="section services">
+    <div class="container">
+        <h2>Mūsų paslaugos</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Kompiuterinė diagnostika</h3>
+                <p>Greitai nustatome gedimus, pateikiame sprendimus ir kainą prieš darbus.</p>
+            </article>
+            <article class="card">
+                <h3>Variklių ir važiuoklės remontas</h3>
+                <p>Patyrę meistrai, kokybiškos dalys ir aiški garantija atliktiems darbams.</p>
+            </article>
+            <article class="card">
+                <h3>Padangų montavimas ir balansavimas</h3>
+                <p>Sezoninis keitimas, sandėliavimas ir ratlankių priežiūra.</p>
+            </article>
+            <article class="card">
+                <h3>Alyvos ir filtrų keitimas</h3>
+                <p>Pagal gamintojo reikalavimus – greitai, skaidriai ir tvarkingai.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Apie mus -->
+<section id="about" class="section about">
+    <div class="container about-inner">
+        <div class="about-text">
+            <h2>Apie mus</h2>
+            <p>
+                Dirbame nuo 2014 m. – daugiau nei 10 metų patirtis ir šimtai patenkintų klientų.
+                Mūsų tikslas – aiški komunikacija, skaidri kaina ir kokybė, kuria galima pasitikėti.
+            </p>
+            <ul class="ticks">
+                <li>Garantija darbams</li>
+                <li>Aiškios kainos prieš pradžią</li>
+                <li>Greitas terminas</li>
+            </ul>
+        </div>
+        <div class="about-media" role="img" aria-label="Autoserviso dirbtuvės"></div>
+    </div>
+</section>
+
+<!-- Kontaktai -->
+<section id="contact" class="section contact">
+    <div class="container contact-inner">
+        <div class="contact-card">
+            <h2>Kontaktai</h2>
+            <p><strong>Telefonas:</strong> <a href="tel:+37060457322">+370 604 57322</a></p>
+            <p><strong>El. paštas:</strong> <a href="ernestasnc@gmail.com">ernestasnc@gmail.com</a></p>
+            <p><strong>Adresas:</strong> Pas Ernestą</p>
+            <div class="contact-cta">
+                <a class="btn" href="mailto:info@autoservisas.lt?subject=Užklausa dėl remonto&body=Sveiki, noriu užsiregistruoti...">Užklausa el. paštu</a>
+                <a class="btn-outline" target="_blank" rel="noopener" href="https://maps.google.com/?q=Vilniaus+g.+10+Vilnius">Rasti žemėlapyje</a>
+            </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false" aria-label="Greita užklausa">
+            <label>
+                Vardas
+                <input type="text" placeholder="Jūsų vardas" required />
+            </label>
+            <label>
+                Telefonas
+                <input type="tel" placeholder="+370..." required />
+            </label>
+            <label>
+                Automobilio modelis
+                <input type="text" placeholder="Pvz., VW Golf 2015" />
+            </label>
+            <label>
+                Žinutė
+                <textarea rows="4" placeholder="Aprašykite problemą..."></textarea>
+            </label>
+            <button class="btn" type="submit" id="fake-submit">Siųsti užklausą</button>
+            <p class="form-note">Demo forma – portfeliui. Realioj versijoj pajungsim el. pašto siuntimą.</p>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> AutoServisas LT • IĮ • Įmonės kodas 123456789</p>
+        <a href="#home" class="to-top" aria-label="Į viršų">↑</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
