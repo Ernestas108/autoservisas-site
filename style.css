@@ -165,3 +165,21 @@ body{
 @media (prefers-reduced-motion: reduce){
     *{transition:none !important; scroll-behavior:auto}
 }
+.back-to-portfolio{
+    position: fixed;
+    top: 16px;           /* buvo bottom – keliame į viršų, kad nepasislėptų */
+    left: 16px;
+    background: #ffb703;
+    color: #111;
+    padding: .6rem .9rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,.25);
+    z-index: 10000;      /* labai aukštas, kad būtų virš hero/header sluoksnių */
+    transition: transform .15s ease, filter .15s ease;
+}
+.back-to-portfolio:hover{
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
